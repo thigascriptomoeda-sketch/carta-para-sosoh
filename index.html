@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#7a1635">
+<meta name="description" content="Uma carta especial para Sosoh ❤️">
+<title>Para Sosoh ❤️</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family: Georgia, "Times New Roman", serif; color:#4b2630;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,.75), transparent 25%),
+    radial-gradient(circle at 90% 20%, rgba(255,220,230,.6), transparent 28%),
+    linear-gradient(135deg,#fff7f8,#f9e4ea 48%,#fff9f8);
+  min-height:100vh; overflow-x:hidden;
+}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;bottom:-40px;font-size:22px;opacity:.6;animation:rise linear infinite}
+@keyframes rise{from{transform:translateY(0) rotate(0deg);opacity:0}15%{opacity:.65}to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+main{position:relative;z-index:1;max-width:900px;margin:auto;padding:22px 16px 70px}
+.hero{text-align:center;padding:58px 10px 34px}
+.badge{display:inline-block;padding:7px 16px;border:1px solid #d8a0b0;border-radius:999px;background:#fff8fa;color:#8c3452;font-size:.9rem;letter-spacing:.08em}
+h1{font-size:clamp(3rem,12vw,6rem);margin:18px 0 6px;color:#7a1635;text-shadow:0 2px 18px rgba(122,22,53,.12)}
+.subtitle{font-size:1.15rem;color:#80515e;margin:0 auto 25px}
+.btn{
+  border:0;border-radius:999px;padding:13px 22px;font-size:1rem;cursor:pointer;
+  background:#7a1635;color:white;box-shadow:0 8px 25px rgba(122,22,53,.22);
+  transition:.2s transform,.2s box-shadow
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(122,22,53,.3)}
+.card{
+  background:rgba(255,255,255,.84);backdrop-filter:blur(8px);
+  border:1px solid rgba(180,90,115,.22);border-radius:28px;
+  box-shadow:0 18px 55px rgba(100,30,50,.10);padding:30px;margin:20px 0
+}
+.letter{font-size:1.13rem;line-height:1.9}
+.letter h2{text-align:center;color:#7a1635;font-size:1.9rem;margin-top:0}
+.letter p{margin:0 0 17px}
+.signature{text-align:right;font-style:italic;color:#7a1635;font-size:1.25rem;margin-top:26px}
+.gallery-title{text-align:center;color:#7a1635;margin:5px 0 20px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.photo{margin:0;overflow:hidden;border-radius:20px;background:#f2dce3;box-shadow:0 8px 24px rgba(70,20,35,.13)}
+.photo img{display:block;width:100%;height:320px;object-fit:cover;transition:transform .45s}
+.photo:hover img{transform:scale(1.035)}
+.photo:first-child{grid-column:span 2}
+.photo:first-child img{height:430px}
+.music{text-align:center}
+.music p{font-family:Arial,sans-serif;color:#77535d}
+#player{display:none;margin:18px auto 0;max-width:560px;aspect-ratio:16/9}
+#player iframe{width:100%;height:100%;border:0;border-radius:18px}
+.qr{text-align:center}
+.qr-box{display:inline-block;padding:14px;background:white;border-radius:18px;box-shadow:0 8px 25px rgba(70,20,35,.12)}
+.qr-box img{width:220px;height:220px;display:block}
+.small{font-family:Arial,sans-serif;font-size:.83rem;color:#86636d;line-height:1.5}
+.final{text-align:center;padding:45px 20px 15px}
+.final .big{font-size:clamp(2rem,7vw,3.8rem);color:#7a1635;margin:0 0 10px}
+footer{text-align:center;font-family:Arial,sans-serif;font-size:.8rem;color:#98717c;margin-top:35px}
+@media(max-width:620px){
+ .card{padding:22px 18px;border-radius:22px}
+ .letter{font-size:1.05rem}
+ .gallery{grid-template-columns:1fr}
+ .photo:first-child{grid-column:span 1}
+ .photo img,.photo:first-child img{height:340px}
+}
+</style>
+</head>
+<body>
+<div class="hearts" aria-hidden="true"></div>
+
+<main>
+<section class="hero">
+  <div class="badge">UMA CARTA DO MEU CORAÇÃO</div>
+  <h1>Sosoh ❤️</h1>
+  <p class="subtitle">Para você guardar um pedacinho do nosso amor.</p>
+  <button class="btn" onclick="abrirMusica()">🎵 Tocar nossa música</button>
+</section>
+
+<section class="card music">
+  <h2 style="color:#7a1635">Nossa música 🎶</h2>
+  <p>Coloque o som, aumente um pouquinho o volume e leia com calma. ❤️</p>
+  <div id="player">
+    <iframe id="yt" title="Nossa música" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="card letter">
+  <h2>Para a minha princesa ❤️</h2>
+  <p><strong>Sosoh ❤️!</strong></p>
+  <p>Desde o nosso primeiro encontro, o seu primeiro sorriso contagiante, o seu primeiro abraço confortante e os seus lindos olhos, que parecem sorrir para mim toda vez que olho diretamente para eles, fizeram com que eu ficasse totalmente maluco por você, minha princesa!</p>
+  <p>Espero continuar sendo o seu amor, o seu bem e o seu melhor amigo, é claro, sempre debaixo das bênçãos do nosso Deus!</p>
+  <p>Te amo, Sosoh! ♥️</p>
+  <div class="signature">Com todo o meu amor. ❤️</div>
+</section>
+
+<section class="card">
+  <h2 class="gallery-title">Nossos momentos 📸</h2>
+  <div class="gallery">
+    <figure class="photo"><img src="fotos/foto1.jpg" alt="Momento do casal"></figure>
+    <figure class="photo"><img src="fotos/foto2.jpg" alt="Momento do casal"></figure>
+    <figure class="photo"><img src="fotos/foto3.jpg" alt="Momento do casal"></figure>
+    <figure class="photo"><img src="fotos/foto4.jpg" alt="Momento do casal"></figure>
+    <figure class="photo"><img src="fotos/foto5.jpg" alt="Momento do casal"></figure>
+    <figure class="photo"><img src="fotos/foto6.jpg" alt="Momento do casal"></figure>
+    <figure class="photo"><img src="fotos/foto7.jpg" alt="Momento do casal"></figure>
+  </div>
+</section>
+
+<section class="card qr">
+  <h2 style="color:#7a1635">Um segredo para você ❤️</h2>
+  <p>Depois de publicar esta carta na internet, coloque o QR Code do endereço final aqui.</p>
+  <div class="qr-box"><img src="qr_code.png" alt="QR Code"></div>
+  <p class="small">O QR Code incluído é um modelo de configuração. O arquivo <b>COMO_PUBLICAR.txt</b> explica como gerar o QR Code definitivo com o link da sua carta.</p>
+</section>
+
+<section class="final">
+  <p class="big">Eu escolheria você<br>de novo. ❤️</p>
+  <p>Hoje, amanhã e em todos os capítulos que Deus permitir que a gente escreva juntos.</p>
+</section>
+
+<footer>Feito com carinho especialmente para Sosoh ❤️</footer>
+</main>
+
+<script>
+function abrirMusica(){
+  const player=document.getElementById('player');
+  const iframe=document.getElementById('yt');
+  iframe.src="https://www.youtube.com/embed/ao65W_bOs5M?autoplay=1&rel=0";
+  player.style.display="block";
+  player.scrollIntoView({behavior:"smooth",block:"center"});
+}
+const box=document.querySelector('.hearts');
+for(let i=0;i<22;i++){
+  const h=document.createElement('span');
+  h.className='heart';
+  h.textContent=Math.random()>.25?'♥':'♡';
+  h.style.left=(Math.random()*100)+'%';
+  h.style.animationDuration=(7+Math.random()*9)+'s';
+  h.style.animationDelay=(-Math.random()*12)+'s';
+  h.style.fontSize=(14+Math.random()*22)+'px';
+  box.appendChild(h);
+}
+</script>
+</body>
+</html>
